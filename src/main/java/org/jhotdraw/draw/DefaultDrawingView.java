@@ -177,7 +177,7 @@ public class DefaultDrawingView
         return selectedFigures.isEmpty();
     }
 
-    private class EventHandler implements FigureListener, CompositeFigureListener, HandleListener, FocusListener {
+    public class EventHandler implements FigureListener, CompositeFigureListener, HandleListener, FocusListener {
 
         @Override
         public void figureAdded(CompositeFigureEvent evt) {
