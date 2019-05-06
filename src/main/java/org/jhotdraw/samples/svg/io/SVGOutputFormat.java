@@ -308,7 +308,7 @@ public class SVGOutputFormat implements OutputFormat {
         writeAttribute(elem, "y", y, 0d);
         writeAttribute(elem, "width", w, 0d);
         writeAttribute(elem, "height", h, 0d);
-        writeAttribute(elem, "xlink:href", "data:image;base64," + Base64.encodeBytes(imageData), "");
+        writeAttribute(elem, "xlink:href", "data:image;base64," + org.jhotdraw.io.Base64.encodeBytes(imageData), "");
         writeOpacityAttribute(elem, attributes);
         writeTransformAttribute(elem, attributes);
         return elem;

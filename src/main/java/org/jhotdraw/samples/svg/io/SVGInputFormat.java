@@ -720,7 +720,7 @@ public class SVGInputFormat implements InputFormat {
                 int semicolonPos = href.indexOf(';');
                 if (semicolonPos != -1) {
                     if (href.indexOf(";base64,") == semicolonPos) {
-                        imageData = Base64.decode(href.substring(semicolonPos + 8));
+                        imageData = org.jhotdraw.io.Base64.decode(href.substring(semicolonPos + 8));
                     } else {
                         throw new IOException("Unsupported encoding in data href in image element:" + href);
                     }
