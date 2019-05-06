@@ -2,3 +2,4 @@
 /.nb-gradle/
 /build/
 *~
+/nbproject/private/
